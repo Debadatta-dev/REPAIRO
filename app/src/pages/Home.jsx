@@ -31,7 +31,7 @@ function Home() {
         <div className="flex items-center gap-4">
 
           <Link
-            to="/"
+            to="/login"
             className="px-5 py-2 rounded-xl border border-white/10 bg-white/10 hover:bg-white/20 transition-all"
           >
             Sign In
@@ -75,7 +75,7 @@ function Home() {
             </Link>
 
             <Link
-              to="/"
+              to="/login"
               className="px-8 py-4 rounded-2xl border border-white/10 bg-white/10 hover:bg-white/20 transition-all text-lg"
             >
               Login
