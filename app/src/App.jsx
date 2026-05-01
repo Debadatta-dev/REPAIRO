@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Routes>
-             <Route path="/home" element={<Home />} />
-             <Route path="/" element={<Login />} />
+             <Route path="/" element={<Home />} />
+             <Route path="/login" element={<Login />} />
              <Route path="/signup" element={<Signup />} />
              <Route path="/user" element={<UserDashboard />} />
              <Route path="/requestdetails" element={<RequestDetails />} />
