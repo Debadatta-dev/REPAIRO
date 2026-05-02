@@ -580,7 +580,7 @@ const sendDiagnosis = async (requestId) => {
               [req._id]: e.target.value,
             })
           }
-          className="w-full p-3 rounded-xl bg-white/10 border border-white/10"
+          className="w-full p-3 rounded-xl bg-[#fff] border border-white/10 text-[#000]"
         >
           <option value="">
             Select Agent
