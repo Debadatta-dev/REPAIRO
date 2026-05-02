@@ -1,19 +1,53 @@
-module.exports = {
-  pending: ["pickup_assigned"],
+const allowedTransitions = {
 
-  pickup_assigned: ["picked"],
-  picked: ["in_transit"],
-  in_transit: ["delivered_to_shop"],
+  pending: [
+    "pickup_assigned"
+  ],
 
-  delivered_to_shop: ["diagnosed"],
+  pickup_assigned: [
+    "picked"
+  ],
 
-  diagnosed: ["approved", "rejected"],
+  picked: [
+    "in_transit"
+  ],
 
-  approved: ["repair_in_progress"],
-  repair_in_progress: ["repaired"],
+  in_transit: [
+    "delivered_to_shop"
+  ],
 
-  repaired: ["return_assigned"],
+  delivered_to_shop: [
+    "diagnosed"
+  ],
 
-  return_assigned: ["returning"],
-  returning: ["completed"]
+  diagnosed: [
+    "approved",
+    "rejected"
+  ],
+
+  approved: [
+    "repair_in_progress"
+  ],
+
+  repair_in_progress: [
+    "repaired"
+  ],
+
+  repaired: [
+    "return_assigned"
+  ],
+
+  return_assigned: [
+    "returning"
+  ],
+
+  returning: [
+    "completed"
+  ],
+
+  completed: [],
+
+  rejected: []
 };
+
+module.exports = allowedTransitions;

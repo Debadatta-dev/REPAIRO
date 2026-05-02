@@ -144,6 +144,18 @@ exports.updateRepairStatus = async (req, res) => {
       });
     }
 
+
+    // VALIDATE FLOW
+    const allowed =
+      allowedTransitions[request.status];
+
+    if (!allowed.includes(status)) {
+      return res.status(400).json({
+        msg: `Cannot move from ${request.status} to ${status}`
+      });
+    }
+
+
     request.status = status;
 
     await request.save();

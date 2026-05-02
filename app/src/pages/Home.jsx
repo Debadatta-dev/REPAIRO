@@ -175,11 +175,11 @@ function Home() {
             <div className="space-y-6 text-gray-300 text-lg">
 
               <p>
-                📞 9933993399
+                📞 7873235641
               </p>
 
               <p>
-                📧 contact@repairo.com
+                📧 debadattamalla@hotmail.com <br /> <p className="ml-[1.5vw]">contact@repairo.com </p>
               </p>
 
               <p>
@@ -242,7 +242,7 @@ function Home() {
 
         {/* COPYRIGHT */}
         <div className="mt-20 border-t border-white/10 pt-8 text-center text-gray-500">
-          © REPAIRO All Rights Reserved 2026
+          © 2026 REPAIRO All Rights Reserved 
         </div>
 
       </footer>
